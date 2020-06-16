@@ -30,7 +30,8 @@ https://www.youtube.com/channel/UCQM5ye1xR4vJgtga0ryud2Q/
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="widget no-box">
                         <h5 class="widget-title">Admin Access<span></span></h5>
-                        <form>
+                        <button class="btn-primary" *ngIf="!userLog()" (click)="isLogRequest()">Log In</button>
+                        <form *ngIf="userLog()">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Username</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
@@ -39,7 +40,10 @@ https://www.youtube.com/channel/UCQM5ye1xR4vJgtga0ryud2Q/
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="container d-flex justify-content-between">
+                                <button type="submit" class="btn btn-primary" (click)="isLogRequest()">Submit</button>
+                                <button type="submit" class="btn btn-primary" (click)="isLogRequest()">Return</button>
+                            </div>
                         </form>
                     </div>
                 </div>

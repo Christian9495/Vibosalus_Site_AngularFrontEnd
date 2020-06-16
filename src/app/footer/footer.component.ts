@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  logRequest: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  userLog(){
+    return this.logRequest;
+  }
+
+  isLogRequest(){
+    this.logRequest = !this.logRequest;
   }
 
 }

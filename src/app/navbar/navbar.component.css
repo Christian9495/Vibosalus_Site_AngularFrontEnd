@@ -9,13 +9,14 @@
 }
 
 .navspace {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     width: 100%;
 }
 
 .centered-right {
-    padding-top: 2%;
+    padding-top: 3%;
     padding-left: 5%;
+    margin-bottom: 0 auto;
 }
 
 .distancing {
@@ -23,14 +24,26 @@
 }
 
 .distancing a {
-    color: #ffb81c;
+    color: white;
     font-weight: 650;
     font-family: Roboto, sans-serif;
     font-size: 1.2rem;
 }
 
-.custom-toggler.navbar-toggler {
-    border-color: rgb(0, 0, 0);
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #f7ff00;
+}
+
+.dropdown-menu {
+    margin-top: 6.5%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dropdown-menu:hover a {
+    color: black;
 }
 
 a.middle {
