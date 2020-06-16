@@ -1,0 +1,56 @@
+.nav-back {
+    background-image: url(../../assets/carousel/banner.jpg);
+    min-height: 70rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0%;
+}
+
+.navspace {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.centered-right {
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+.distancing {
+    margin-left: 25%;
+}
+
+.distancing a {
+    color: #ffb81c;
+    font-weight: 650;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(0, 0, 0);
+}
+
+a.middle {
+    position: relative;
+}
+
+a.middle:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a.middle:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}

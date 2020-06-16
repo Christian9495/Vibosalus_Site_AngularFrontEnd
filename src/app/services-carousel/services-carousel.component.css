@@ -1,0 +1,29 @@
+.service {
+    display: flex;
+    padding: 2%;
+}
+
+.divisor {
+    height: 0rem;
+    border: 1px solid #767582;
+    margin-top: 3.5%;
+    margin-bottom: 3%;
+}
+
+.card-img {
+    height: 40vh;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: red;
+}
+
+.card-footer a:hover {
+    color: white;
+}
+
+.w-20 {
+    width: 100% !important;
+    height: 3.5vh;
+}
